@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <title>BattleShips game by rm</title>
+      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body>
+      <div id="player">
+         <h1><i>BattleShips</i></h1>
+         <div class="pure-g">
+		    <div class="pure-u-1-1"><a id="hide_ships" class="pure-button" href="#" style="width:100%;">Hide ships (they're shown for debugging/testing)</a></div>
+		</div>
+         <div class="pure-g">
+            <!-- row 1 -->
+            <div class="pure-u-1-10"><button id="1" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="2" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="3" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="4" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="5" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="6" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="7" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="8" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="9" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="10" class="pure-button"></button></div>
+
+            <!-- row 2 -->
+            <div class="pure-u-1-10"><button id="11" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="12" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="13" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="14" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="15" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="16" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="17" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="18" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="19" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="20" class="pure-button"></button></div>
+
+            <!-- row 3 -->
+            <div class="pure-u-1-10"><button id="21" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="22" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="23" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="24" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="25" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="26" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="27" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="28" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="29" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="30" class="pure-button"></button></div>
+
+            <!-- row 4 -->
+            <div class="pure-u-1-10"><button id="31" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="32" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="33" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="34" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="35" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="36" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="37" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="38" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="39" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="40" class="pure-button"></button></div>
+
+            <!-- row 5 -->
+            <div class="pure-u-1-10"><button id="41" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="42" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="43" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="44" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="45" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="46" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="47" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="48" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="49" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="50" class="pure-button"></button></div>
+
+            <!-- row 6 -->
+            <div class="pure-u-1-10"><button id="51" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="52" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="53" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="54" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="55" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="56" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="57" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="58" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="59" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="60" class="pure-button"></button></div>
+
+            <!-- row 7 -->
+            <div class="pure-u-1-10"><button id="61" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="62" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="63" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="64" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="65" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="66" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="67" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="68" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="69" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="70" class="pure-button"></button></div>
+
+            <!-- row 8 -->
+            <div class="pure-u-1-10"><button id="71" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="72" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="73" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="74" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="75" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="76" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="77" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="78" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="79" class="pure-button"></button></div>
+
+            <!-- row 9 -->
+            <div class="pure-u-1-10"><button id="80" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="81" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="82" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="83" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="84" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="85" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="86" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="87" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="88" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="89" class="pure-button"></button></div>
+            
+            <!-- row 10 -->
+            <div class="pure-u-1-10"><button id="90" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="91" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="92" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="93" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="94" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="95" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="96" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="97" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="98" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="99" class="pure-button"></button></div>
+            <div class="pure-u-1-10"><button id="100" class="pure-button"></button></div>
+            <div class="pure-u-5-5" style="text-align:center; color:#969696;">
+                  <p>refresh page to see algorithm work</p>
+            </div>
+         </div>
+      </div>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="js/game.js"></script>
+   </body>
+</html>
